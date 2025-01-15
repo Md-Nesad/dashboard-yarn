@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="bg-primary dark:bg-slate-700 text-white py-2 px-5 flex justify-between">
       <Link href="/">
-        <Image src={logo} alt="TraversyPress" width={40} />
+        <Image src={logo} alt="NesadDashboard" width={40} />
       </Link>
 
       <DropdownMenu>
@@ -29,10 +29,13 @@ const Navbar = () => {
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <Link href="/profile">Profile</Link>
+            <Link href="/">Dashboard</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/auth">Logout</Link>
+            <Link href="/posts">Posts</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="/auth">Login</Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
